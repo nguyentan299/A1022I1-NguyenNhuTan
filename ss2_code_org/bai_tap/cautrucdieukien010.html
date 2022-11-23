@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  let a = +prompt('Nhập sản lượng điện tiêu thụ (kWh):');
+  const m1 = a*1484;
+  const m2 = 50*1484 + (a - 50)*1533;
+  const m3 = 50*1484 + 50*1533 + (a - 100)*1786;
+  const m4 = 50*1484 + 50*1533 + 100*1786 + (a - 200)*2242;
+  const m5 = 50*1484 + 50*1533 + 100*1786 + 100*2242 + (a - 300)*2503;
+  const m6 = 50*1484 + 50*1533   + 100*1786 + 100*2242 + 100*2503 + (a-400)*2587;
+  if (a <= 50){
+    alert('Tiền điện là: ' + m1);
+  } else if (a <= 100){
+    alert('Tiền điện là: ' + m2);
+  } else if (a <= 200){
+    alert('Tiền điện là: ' + m3);
+  }else if (a <= 300){
+    alert('Tiền điện là: ' + m4);
+  }else if (a <= 400){
+    alert('Tiền điện là: ' + m5);
+  }else {
+    alert('Tiền điện là: ' + m6);
+  }
+</script>
+</body>
+</html>

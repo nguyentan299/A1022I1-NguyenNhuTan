@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<meta charset="UTF-8">
+<title>Tinh so ngay</title>
+</head>
+<body>
+<button onclick="Day()">Tính số ngày</button>
+<h2 id="month" style="color:red"></h2>
+</body>
+<script>
+  function Day(){
+    let month = +prompt("Nhập Tháng" );
+    switch(month){
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        document.getElementById("month").innerHTML= "Tháng" + month + "có 30 ngày";
+        break;
+      case 4:
+      case 6:
+      case 9:
+      case 11:
+        document.getElementById("month").innerHTML= "Tháng"+ month +"có 31 ngày";
+        break;
+      case 2:
+        document.getElementById("month").innerHTML= "Tháng"+ month +" có 29 hoặc 28 ngày";
+        break;
+      default:
+        document.getElementById("month").innerHTML= "Xin vui lòng nhập lại ";
+    }
+  }
+</script>
+</body>
+</html>
