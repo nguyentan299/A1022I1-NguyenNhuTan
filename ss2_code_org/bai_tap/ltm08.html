@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let arr=[];
+  for (let i = 0; i <10 ; i++) {
+    arr[i]=+prompt("Nhập phần tử thứ "+i);
+  }
+  let temp;
+  for (let i = 0; i <10 ; i++) {
+    for (let j = 9; j >=i ; j--) {
+      if(arr[j]>arr[j-1]){
+        // temp=arr[j];
+        // arr[j]=arr[j-1];
+        // arr[j-1]=temp;
+        [arr[j],arr[j-1]]=[arr[j-1],arr[j]];
+      }
+    }
+  }
+  document.write(arr);
+</script>
+</html>

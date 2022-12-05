@@ -8,6 +8,6 @@
 
 git add .
 
-git commit -m <tin nhan>
+git commit -m "tin nhan"
 
 git push
